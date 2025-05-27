@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { ShoppingBag, Filter, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -13,115 +12,115 @@ const Shop = () => {
   const products = [
     {
       id: 1,
-      name: "Hydrating Rose Serum",
+      name: "Nigerian Shea Butter Serum",
       category: "serums",
       skinType: "dry",
-      price: "$45",
-      originalPrice: "$60",
+      price: "₦8,500",
+      originalPrice: "₦12,000",
       rating: 4.9,
       reviews: 124,
-      description: "Intensive hydrating serum with rose water and hyaluronic acid",
+      description: "Premium shea butter serum perfect for Nigerian skin",
       image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=400",
       bestseller: true,
-      ingredients: ["Rose Water", "Hyaluronic Acid", "Vitamin E"]
+      ingredients: ["Shea Butter", "Hyaluronic Acid", "Vitamin E"]
     },
     {
       id: 2,
-      name: "Gentle Foam Cleanser",
+      name: "Gentle Black Soap Cleanser",
       category: "cleansers",
       skinType: "sensitive",
-      price: "$28",
+      price: "₦4,200",
       originalPrice: "",
       rating: 4.8,
       reviews: 89,
-      description: "Mild foaming cleanser perfect for sensitive skin types",
+      description: "Traditional black soap cleanser for all skin types",
       image: "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=400",
       bestseller: false,
-      ingredients: ["Chamomile", "Aloe Vera", "Coconut Oil"]
+      ingredients: ["Black Soap", "Aloe Vera", "Coconut Oil"]
     },
     {
       id: 3,
       name: "Vitamin C Brightening Cream",
       category: "moisturizers",
       skinType: "normal",
-      price: "$52",
+      price: "₦7,800",
       originalPrice: "",
       rating: 4.7,
       reviews: 156,
-      description: "Brightening day cream with vitamin C and natural extracts",
+      description: "Brightening cream with natural Nigerian extracts",
       image: "https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400",
       bestseller: true,
-      ingredients: ["Vitamin C", "Niacinamide", "Shea Butter"]
+      ingredients: ["Vitamin C", "Turmeric", "Shea Butter"]
     },
     {
       id: 4,
-      name: "Purifying Clay Mask",
+      name: "Clay Mask (Lagos Clay)",
       category: "masks",
       skinType: "oily",
-      price: "$35",
+      price: "₦5,250",
       originalPrice: "",
       rating: 4.6,
       reviews: 203,
-      description: "Deep cleansing clay mask for oily and acne-prone skin",
+      description: "Deep cleansing mask with authentic Lagos clay",
       image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400",
       bestseller: false,
-      ingredients: ["Bentonite Clay", "Tea Tree Oil", "Charcoal"]
+      ingredients: ["Lagos Clay", "Tea Tree Oil", "Neem Extract"]
     },
     {
       id: 5,
-      name: "Anti-Aging Night Serum",
+      name: "Anti-Aging Night Oil",
       category: "serums",
       skinType: "mature",
-      price: "$68",
-      originalPrice: "$85",
+      price: "₦10,200",
+      originalPrice: "₦12,750",
       rating: 4.9,
       reviews: 87,
-      description: "Powerful anti-aging serum with retinol and peptides",
+      description: "Powerful anti-aging oil with African botanicals",
       image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=400",
       bestseller: true,
-      ingredients: ["Retinol", "Peptides", "Squalane"]
+      ingredients: ["Baobab Oil", "Argan Oil", "Marula Oil"]
     },
     {
       id: 6,
       name: "Exfoliating Sugar Scrub",
       category: "exfoliants",
       skinType: "all",
-      price: "$32",
+      price: "₦4,800",
       originalPrice: "",
       rating: 4.5,
       reviews: 112,
-      description: "Natural sugar scrub for smooth, glowing skin",
+      description: "Natural sugar scrub with Nigerian honey",
       image: "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=400",
       bestseller: false,
-      ingredients: ["Brown Sugar", "Coconut Oil", "Vanilla Extract"]
+      ingredients: ["Brown Sugar", "Nigerian Honey", "Coconut Oil"]
     },
     {
       id: 7,
       name: "Soothing Eye Cream",
       category: "eye-care",
       skinType: "all",
-      price: "$42",
+      price: "₦6,300",
       originalPrice: "",
       rating: 4.8,
       reviews: 94,
-      description: "Gentle eye cream to reduce puffiness and dark circles",
+      description: "Gentle eye cream with African potato extract",
       image: "https://images.unsplash.com/photo-1599735214876-cc4e3ab3a924?w=400",
       bestseller: false,
-      ingredients: ["Caffeine", "Cucumber Extract", "Arnica"]
+      ingredients: ["African Potato", "Cucumber", "Aloe Vera"]
     },
     {
       id: 8,
       name: "Hydrating Sheet Masks (5-pack)",
       category: "masks",
       skinType: "dry",
-      price: "$25",
+      price: "₦3,750",
       originalPrice: "",
       rating: 4.7,
       reviews: 178,
-      description: "Pack of 5 hydrating sheet masks for instant moisture boost",
+      description: "Pack of 5 hydrating masks with Nigerian ingredients",
       image: "https://images.unsplash.com/photo-1570554886111-e80fcca6a029?w=400",
       bestseller: true,
-      ingredients: ["Hyaluronic Acid", "Collagen", "Aloe Vera"]
+      ingredients: ["Shea Butter", "Plantain Extract", "Aloe Vera"]
     }
   ];
 
@@ -151,7 +150,7 @@ const Shop = () => {
   });
 
   const handlePurchase = (product: any) => {
-    const phoneNumber = "+1234567890"; // Replace with actual phone number
+    const phoneNumber = "+2348123456789";
     const message = `Hello Yemkiss! I want to purchase the ${product.name} (${product.price}). Can you share the details and payment options?`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -160,27 +159,26 @@ const Shop = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-rose-50 to-peach-50">
+      <section className="py-20 bg-gradient-to-br from-yellow-50 to-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-gray-900 mb-6 animate-fade-in">
-            Premium Skincare 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-peach-600">
+            Premium Nigerian Skincare
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
               Collection
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Discover our carefully curated selection of premium skincare products, 
-            formulated with natural ingredients for all skin types and concerns.
+            Discover our carefully curated selection of skincare products made with authentic Nigerian ingredients, priced in Naira for your convenience.
           </p>
           <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
             <ShoppingBag className="w-4 h-4" />
-            <span>Free shipping on orders over $50 • Easy WhatsApp checkout</span>
+            <span>Free delivery in Lagos • Easy WhatsApp checkout • Pay in Naira</span>
           </div>
         </div>
       </section>
 
       {/* Filters */}
-      <section className="py-8 bg-white border-b border-rose-100">
+      <section className="py-8 bg-white border-b border-yellow-100">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -190,10 +188,10 @@ const Shop = () => {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Select value={selectedCategory} onValueChange={setSelectedCategory}>
-                <SelectTrigger className="w-48 border-rose-200 focus:ring-rose-300">
+                <SelectTrigger className="w-48 border-yellow-200 focus:ring-yellow-300">
                   <SelectValue placeholder="Select Category" />
                 </SelectTrigger>
-                <SelectContent className="bg-white border-rose-200">
+                <SelectContent className="bg-white border-yellow-200">
                   {categories.map((category) => (
                     <SelectItem key={category.value} value={category.value}>
                       {category.label}
@@ -203,10 +201,10 @@ const Shop = () => {
               </Select>
 
               <Select value={selectedSkinType} onValueChange={setSelectedSkinType}>
-                <SelectTrigger className="w-48 border-rose-200 focus:ring-rose-300">
+                <SelectTrigger className="w-48 border-yellow-200 focus:ring-yellow-300">
                   <SelectValue placeholder="Select Skin Type" />
                 </SelectTrigger>
-                <SelectContent className="bg-white border-rose-200">
+                <SelectContent className="bg-white border-yellow-200">
                   {skinTypes.map((skinType) => (
                     <SelectItem key={skinType.value} value={skinType.value}>
                       {skinType.label}
@@ -224,7 +222,7 @@ const Shop = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProducts.map((product) => (
-              <Card key={product.id} className="overflow-hidden hover-lift border-rose-100 group">
+              <Card key={product.id} className="overflow-hidden hover-lift border-yellow-200 hover:border-yellow-400 group">
                 <div className="aspect-square overflow-hidden relative">
                   <img 
                     src={product.image} 
@@ -232,7 +230,7 @@ const Shop = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   {product.bestseller && (
-                    <Badge className="absolute top-4 left-4 bg-gradient-to-r from-rose-500 to-peach-500 text-white">
+                    <Badge className="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black">
                       Bestseller
                     </Badge>
                   )}
@@ -274,7 +272,7 @@ const Shop = () => {
                     <span className="text-xs text-gray-500 uppercase tracking-wide">Key Ingredients:</span>
                     <div className="flex flex-wrap gap-1 mt-1">
                       {product.ingredients.slice(0, 3).map((ingredient, i) => (
-                        <Badge key={i} variant="outline" className="text-xs border-rose-200 text-rose-600">
+                        <Badge key={i} variant="outline" className="text-xs border-yellow-200 text-yellow-600">
                           {ingredient}
                         </Badge>
                       ))}
@@ -283,7 +281,7 @@ const Shop = () => {
 
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-2">
-                      <span className="text-2xl font-bold text-rose-600">{product.price}</span>
+                      <span className="text-2xl font-bold text-yellow-600">{product.price}</span>
                       {product.originalPrice && (
                         <span className="text-lg text-gray-400 line-through">
                           {product.originalPrice}
@@ -294,7 +292,7 @@ const Shop = () => {
 
                   <Button 
                     onClick={() => handlePurchase(product)}
-                    className="w-full bg-gradient-to-r from-rose-500 to-peach-500 hover:from-rose-600 hover:to-peach-600 text-white rounded-full hover-scale"
+                    className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black rounded-full hover-scale font-semibold"
                   >
                     Buy on WhatsApp
                   </Button>
@@ -314,32 +312,32 @@ const Shop = () => {
       </section>
 
       {/* Info Section */}
-      <section className="py-16 bg-gradient-to-br from-rose-50 to-peach-50">
+      <section className="py-16 bg-gradient-to-br from-yellow-50 to-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-serif font-bold text-gray-900 mb-6">
-            Why Choose Yemkiss Products?
+            Why Choose Yemkiss Nigerian Products?
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-peach-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🌱</span>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Natural Ingredients</h3>
-              <p className="text-gray-600 text-sm">Carefully selected natural and organic ingredients</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Nigerian Ingredients</h3>
+              <p className="text-gray-600 text-sm">Made with authentic Nigerian botanicals and natural ingredients</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-peach-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🧪</span>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Clinically Tested</h3>
-              <p className="text-gray-600 text-sm">All products are dermatologically tested and approved</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Tested for African Skin</h3>
+              <p className="text-gray-600 text-sm">All products tested specifically for Nigerian and African skin types</p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-rose-400 to-peach-400 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">♻️</span>
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Eco-Friendly</h3>
-              <p className="text-gray-600 text-sm">Sustainable packaging and cruelty-free formulations</p>
+              <h3 className="font-semibold text-gray-900 mb-2">Locally Sourced</h3>
+              <p className="text-gray-600 text-sm">Supporting Nigerian farmers and sustainable local production</p>
             </div>
           </div>
         </div>

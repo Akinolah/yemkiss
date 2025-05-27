@@ -14,8 +14,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 350 65% 47%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 45 93% 47%;
+    --primary-foreground: 0 0% 0%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -23,15 +23,15 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 100% 85%;
+    --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 350 65% 47%;
+    --ring: 45 93% 47%;
 
     --radius: 0.75rem;
 
@@ -55,8 +55,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 350 65% 47%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 45 93% 47%;
+    --primary-foreground: 0 0% 0%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -119,10 +119,10 @@ html {
 }
 
 /* Custom gradient backgrounds */
-.gradient-rose {
-  background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+.gradient-yellow {
+  background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
 }
 
-.gradient-peach {
-  background: linear-gradient(135deg, #fef7ed 0%, #fdedd3 100%);
+.gradient-yellow-light {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
 }

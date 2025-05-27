@@ -12,20 +12,20 @@ const Services = () => {
   const services = {
     facial: [
       {
-        name: "Hydrating Facial",
+        name: "Deep Cleansing Facial",
         duration: "60 mins",
-        price: "$120",
-        description: "Deep hydration treatment for dry and dehydrated skin",
-        benefits: ["Restores moisture", "Improves skin texture", "Reduces fine lines"],
+        price: "₦15,000",
+        description: "Deep pore cleansing and exfoliation for Nigerian skin types",
+        benefits: ["Removes blackheads", "Unclogs pores", "Brightens complexion"],
         image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=400",
         rating: 4.9,
         popular: true
       },
       {
-        name: "Anti-Aging Facial",
+        name: "Anti-Aging Facial Treatment",
         duration: "75 mins",
-        price: "$180",
-        description: "Advanced treatment targeting signs of aging and skin renewal",
+        price: "₦25,000",
+        description: "Advanced anti-aging treatment for mature African skin",
         benefits: ["Reduces wrinkles", "Firms skin", "Improves elasticity"],
         image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=400",
         rating: 4.8,
@@ -34,62 +34,94 @@ const Services = () => {
       {
         name: "Acne Treatment Facial",
         duration: "60 mins",
-        price: "$140",
-        description: "Specialized treatment for acne-prone and problematic skin",
-        benefits: ["Clears breakouts", "Reduces inflammation", "Prevents future acne"],
+        price: "₦18,000",
+        description: "Specialized treatment for acne-prone Nigerian skin",
+        benefits: ["Clears breakouts", "Reduces inflammation", "Prevents scarring"],
         image: "https://images.unsplash.com/photo-1552693673-1bf958298935?w=400",
         rating: 4.7,
         popular: false
       },
       {
-        name: "Brightening Facial",
+        name: "Brightening Glow Facial",
         duration: "60 mins",
-        price: "$160",
-        description: "Illuminating treatment for dull and uneven skin tone",
-        benefits: ["Evens skin tone", "Reduces dark spots", "Adds radiance"],
+        price: "₦20,000",
+        description: "Illuminating treatment for even skin tone",
+        benefits: ["Evens skin tone", "Reduces dark spots", "Natural glow"],
         image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400",
         rating: 4.9,
         popular: true
       }
     ],
-    body: [
+    hair: [
       {
-        name: "Full Body Exfoliation",
-        duration: "45 mins",
-        price: "$100",
-        description: "Complete body scrub and moisturizing treatment",
-        benefits: ["Removes dead skin", "Improves circulation", "Soft smooth skin"],
-        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400",
+        name: "Natural Hair Treatment",
+        duration: "90 mins",
+        price: "₦12,000",
+        description: "Deep conditioning for natural African hair",
+        benefits: ["Moisturizes hair", "Reduces breakage", "Enhances curls"],
+        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400",
         rating: 4.8,
         popular: true
       },
       {
-        name: "Body Wrap Treatment",
-        duration: "90 mins",
-        price: "$200",
-        description: "Detoxifying and firming body wrap with natural ingredients",
-        benefits: ["Detoxifies skin", "Improves firmness", "Reduces cellulite"],
-        image: "https://images.unsplash.com/photo-1596178065887-1198b6148b2b?w=400",
+        name: "Hair Styling & Braiding",
+        duration: "120 mins",
+        price: "₦8,000",
+        description: "Professional styling and traditional braiding",
+        benefits: ["Protective styling", "Long-lasting", "Cultural authenticity"],
+        image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=400",
         rating: 4.7,
         popular: false
       },
       {
-        name: "Relaxing Body Massage",
-        duration: "60 mins",
-        price: "$130",
-        description: "Therapeutic massage with aromatherapy oils",
-        benefits: ["Relieves tension", "Improves circulation", "Deep relaxation"],
-        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=400",
+        name: "Scalp Treatment",
+        duration: "45 mins",
+        price: "₦10,000",
+        description: "Therapeutic scalp massage and treatment",
+        benefits: ["Improves circulation", "Reduces dandruff", "Promotes growth"],
+        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
         rating: 4.9,
         popular: true
       }
     ],
-    consultation: [
+    massage: [
+      {
+        name: "Full Body Relaxing Massage",
+        duration: "60 mins",
+        price: "₦15,000",
+        description: "Complete body massage with natural oils",
+        benefits: ["Relieves tension", "Improves circulation", "Deep relaxation"],
+        image: "https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=400",
+        rating: 4.9,
+        popular: true
+      },
+      {
+        name: "Hot Stone Therapy",
+        duration: "75 mins",
+        price: "₦20,000",
+        description: "Therapeutic hot stone massage",
+        benefits: ["Muscle relaxation", "Stress relief", "Pain reduction"],
+        image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400",
+        rating: 4.8,
+        popular: false
+      },
+      {
+        name: "Prenatal Massage",
+        duration: "60 mins",
+        price: "₦18,000",
+        description: "Safe and gentle massage for expecting mothers",
+        benefits: ["Reduces swelling", "Relieves back pain", "Improves sleep"],
+        image: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=400",
+        rating: 4.7,
+        popular: true
+      }
+    ],
+    consulting: [
       {
         name: "Skin Analysis Consultation",
         duration: "30 mins",
-        price: "$60",
-        description: "Comprehensive skin assessment and personalized routine recommendation",
+        price: "₦5,000",
+        description: "Comprehensive skin assessment for Nigerian skin",
         benefits: ["Skin type analysis", "Product recommendations", "Custom routine"],
         image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400",
         rating: 4.9,
@@ -98,9 +130,9 @@ const Services = () => {
       {
         name: "Beauty Makeover Consultation",
         duration: "45 mins",
-        price: "$80",
-        description: "Complete beauty assessment with makeup and styling tips",
-        benefits: ["Makeup techniques", "Color analysis", "Style recommendations"],
+        price: "₦8,000",
+        description: "Complete beauty transformation consultation",
+        benefits: ["Makeup techniques", "Color analysis", "Style advice"],
         image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400",
         rating: 4.8,
         popular: false
@@ -108,8 +140,8 @@ const Services = () => {
       {
         name: "Bridal Beauty Package",
         duration: "120 mins",
-        price: "$300",
-        description: "Complete bridal preparation with trial makeup and skincare",
+        price: "₦40,000",
+        description: "Complete bridal beauty preparation",
         benefits: ["Trial session", "Wedding day prep", "Touch-up kit"],
         image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400",
         rating: 5.0,
@@ -119,7 +151,7 @@ const Services = () => {
   };
 
   const handleBookService = (serviceName: string, price: string) => {
-    const phoneNumber = "+1234567890"; // Replace with actual phone number
+    const phoneNumber = "+2348123456789";
     const message = `Hello Yemkiss! I would like to book the ${serviceName} service (${price}). Can you please check availability?`;
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -128,17 +160,16 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-rose-50 to-peach-50">
+      <section className="py-20 bg-gradient-to-br from-yellow-50 to-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-gray-900 mb-6 animate-fade-in">
-            Our Premium 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-600 to-peach-600">
-              Beauty Services
+            Premium Beauty Services
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 to-yellow-700">
+              for Nigerian Queens
             </span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Discover our comprehensive range of skincare treatments, body therapies, and beauty consultations 
-            designed to enhance your natural glow and boost your confidence.
+            Expert treatments designed specifically for African beauty, using the finest techniques and natural ingredients.
           </p>
         </div>
       </section>
@@ -147,24 +178,30 @@ const Services = () => {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <Tabs value={selectedCategory} onValueChange={setSelectedCategory} className="w-full">
-            <TabsList className="grid w-full grid-cols-3 mb-12 bg-rose-50 p-1 rounded-xl">
+            <TabsList className="grid w-full grid-cols-4 mb-12 bg-yellow-50 p-1 rounded-xl">
               <TabsTrigger 
                 value="facial" 
-                className="rounded-lg data-[state=active]:bg-white data-[state=active]:text-rose-600 data-[state=active]:shadow-sm"
+                className="rounded-lg data-[state=active]:bg-white data-[state=active]:text-yellow-600 data-[state=active]:shadow-sm"
               >
                 Facial Treatments
               </TabsTrigger>
               <TabsTrigger 
-                value="body" 
-                className="rounded-lg data-[state=active]:bg-white data-[state=active]:text-rose-600 data-[state=active]:shadow-sm"
+                value="hair" 
+                className="rounded-lg data-[state=active]:bg-white data-[state=active]:text-yellow-600 data-[state=active]:shadow-sm"
               >
-                Body Therapy
+                Hair Beauty
               </TabsTrigger>
               <TabsTrigger 
-                value="consultation" 
-                className="rounded-lg data-[state=active]:bg-white data-[state=active]:text-rose-600 data-[state=active]:shadow-sm"
+                value="massage" 
+                className="rounded-lg data-[state=active]:bg-white data-[state=active]:text-yellow-600 data-[state=active]:shadow-sm"
               >
-                Consultations
+                Massage Therapy
+              </TabsTrigger>
+              <TabsTrigger 
+                value="consulting" 
+                className="rounded-lg data-[state=active]:bg-white data-[state=active]:text-yellow-600 data-[state=active]:shadow-sm"
+              >
+                Consulting
               </TabsTrigger>
             </TabsList>
 
@@ -172,7 +209,7 @@ const Services = () => {
               <TabsContent key={category} value={category} className="space-y-8">
                 <div className="grid md:grid-cols-2 gap-8">
                   {categoryServices.map((service, index) => (
-                    <Card key={index} className="overflow-hidden hover-lift border-rose-100 group">
+                    <Card key={index} className="overflow-hidden hover-lift border-yellow-200 hover:border-yellow-400 group">
                       <div className="aspect-video overflow-hidden relative">
                         <img 
                           src={service.image} 
@@ -180,7 +217,7 @@ const Services = () => {
                           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                         />
                         {service.popular && (
-                          <Badge className="absolute top-4 left-4 bg-gradient-to-r from-rose-500 to-peach-500 text-white">
+                          <Badge className="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 to-yellow-600 text-black">
                             Most Popular
                           </Badge>
                         )}
@@ -192,7 +229,7 @@ const Services = () => {
                             {service.name}
                           </h3>
                           <div className="text-right">
-                            <div className="text-2xl font-bold text-rose-600">{service.price}</div>
+                            <div className="text-2xl font-bold text-yellow-600">{service.price}</div>
                             <div className="flex items-center text-sm text-gray-500">
                               <Clock className="w-4 h-4 mr-1" />
                               {service.duration}
@@ -227,7 +264,7 @@ const Services = () => {
                           <ul className="space-y-1">
                             {service.benefits.map((benefit, i) => (
                               <li key={i} className="flex items-center text-sm text-gray-600">
-                                <ArrowRight className="w-3 h-3 text-rose-500 mr-2" />
+                                <ArrowRight className="w-3 h-3 text-yellow-600 mr-2" />
                                 {benefit}
                               </li>
                             ))}
@@ -236,7 +273,7 @@ const Services = () => {
 
                         <Button 
                           onClick={() => handleBookService(service.name, service.price)}
-                          className="w-full bg-gradient-to-r from-rose-500 to-peach-500 hover:from-rose-600 hover:to-peach-600 text-white rounded-full hover-scale"
+                          className="w-full bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-black rounded-full hover-scale font-semibold"
                         >
                           Book via WhatsApp
                         </Button>
@@ -251,19 +288,18 @@ const Services = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-rose-600 to-peach-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-yellow-600 to-yellow-700 text-black">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">
             Not Sure Which Service is Right for You?
           </h2>
-          <p className="text-xl mb-8 text-rose-100">
-            Book a consultation with our experts to create a personalized treatment plan 
-            that's perfect for your skin type and beauty goals.
+          <p className="text-xl mb-8 opacity-90">
+            Book a consultation with our Nigerian beauty experts to create a personalized treatment plan.
           </p>
           <Button 
-            onClick={() => handleBookService("Skin Analysis Consultation", "$60")}
+            onClick={() => handleBookService("Skin Analysis Consultation", "₦5,000")}
             size="lg" 
-            className="bg-white text-rose-600 hover:bg-rose-50 px-8 py-6 text-lg rounded-full hover-scale"
+            className="bg-black text-yellow-400 hover:bg-gray-800 px-8 py-6 text-lg rounded-full hover-scale font-semibold"
           >
             Book Free Consultation
           </Button>
