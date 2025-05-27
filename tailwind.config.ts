@@ -63,18 +63,18 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Nigerian-inspired yellow color scheme
+				// Bright yellow and canary yellow color scheme
 				yellow: {
-					50: '#fffbeb',
-					100: '#fef3c7',
-					200: '#fde68a',
-					300: '#fcd34d',
-					400: '#fbbf24',
-					500: '#f59e0b',
-					600: '#d97706',
-					700: '#b45309',
-					800: '#92400e',
-					900: '#78350f'
+					50: '#fffef7',
+					100: '#fefcbf',
+					200: '#fef08a',
+					300: '#fde047',
+					400: '#facc15',
+					500: '#eab308',
+					600: '#ca8a04',
+					700: '#a16207',
+					800: '#854d0e',
+					900: '#713f12'
 				},
 				green: {
 					50: '#f0fdf4',
@@ -140,6 +140,14 @@ export default {
 						transform: 'translateY(0)',
 						opacity: '1'
 					}
+				},
+				'pulse-glow': {
+					'0%, 100%': {
+						boxShadow: '0 0 5px rgba(250, 204, 21, 0.5)'
+					},
+					'50%': {
+						boxShadow: '0 0 20px rgba(250, 204, 21, 0.8)'
+					}
 				}
 			},
 			animation: {
@@ -147,7 +155,8 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'scale-in': 'scale-in 0.4s ease-out',
-				'slide-up': 'slide-up 0.5s ease-out'
+				'slide-up': 'slide-up 0.5s ease-out',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},

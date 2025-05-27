@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 45 93% 47%;
+    --primary: 55 100% 55%;
     --primary-foreground: 0 0% 0%;
 
     --secondary: 210 40% 96.1%;
@@ -23,7 +23,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 45 100% 85%;
+    --accent: 55 100% 75%;
     --accent-foreground: 0 0% 0%;
 
     --destructive: 0 84.2% 60.2%;
@@ -31,7 +31,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 45 93% 47%;
+    --ring: 55 100% 55%;
 
     --radius: 0.75rem;
 
@@ -55,7 +55,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 45 93% 47%;
+    --primary: 55 100% 55%;
     --primary-foreground: 0 0% 0%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -113,6 +113,14 @@
   @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
 }
 
+.hover-glow {
+  @apply transition-all duration-300 hover:shadow-xl hover:shadow-yellow-400/25;
+}
+
+.hover-rotate {
+  @apply transition-transform duration-300 hover:rotate-1;
+}
+
 /* Smooth scrolling */
 html {
   scroll-behavior: smooth;
@@ -120,9 +128,13 @@ html {
 
 /* Custom gradient backgrounds */
 .gradient-yellow {
-  background: linear-gradient(135deg, #fef3c7 0%, #fbbf24 100%);
+  background: linear-gradient(135deg, #ffff00 0%, #ffd700 100%);
 }
 
 .gradient-yellow-light {
-  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  background: linear-gradient(135deg, #fffef7 0%, #fef9c7 100%);
+}
+
+.hover-gradient {
+  @apply transition-all duration-300 hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-500;
 }
