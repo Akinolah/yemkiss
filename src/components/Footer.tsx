@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Heart, Instagram, Facebook, Twitter } from 'lucide-react';
 
@@ -42,7 +41,9 @@ const Footer = () => {
               <li><Link to="/services" className="text-gray-300 hover:text-yellow-400 transition-colors">Services</Link></li>
               <li><Link to="/shop" className="text-gray-300 hover:text-yellow-400 transition-colors">Shop</Link></li>
               <li><Link to="/gallery" className="text-gray-300 hover:text-yellow-400 transition-colors">Gallery</Link></li>
-              <li><Link to="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Beauty Blog</Link></li>
+              {/* <li><Link to="/blog" className="text-gray-300 hover:text-yellow-400 transition-colors">Beauty Blog</Link></li> */}
+              <li><Link to="/privacy" className="text-gray-300 hover:text-yellow-400 transition-colors">Privacy Policy</Link></li>
+              <li><Link to="/faq" className="text-gray-300 hover:text-yellow-400 transition-colors">FAQ</Link></li>
             </ul>
           </div>
 
@@ -78,20 +79,11 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Footer Bottom Centered */}
         <div className="border-t border-gray-700 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-300 text-sm">
-              © 2024 Yemkiss Nigeria. All rights reserved.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/privacy" className="text-gray-300 hover:text-yellow-400 text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/faq" className="text-gray-300 hover:text-yellow-400 text-sm transition-colors">
-                FAQ
-              </Link>
-            </div>
-          </div>
+          <p className="text-center text-gray-300 text-sm">
+            © 2025 Yemkiss Nigeria. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

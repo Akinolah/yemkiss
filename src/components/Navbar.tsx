@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
@@ -14,7 +13,7 @@ const Navbar = () => {
     { name: 'Services', path: '/services' },
     { name: 'Shop', path: '/shop' },
     { name: 'Gallery', path: '/gallery' },
-    { name: 'Blog', path: '/blog' },
+    // { name: 'Blog', path: '/blog' }, // Uncomment if you have a blog section
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -35,25 +34,30 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 hover-scale ${
-                  isActive(item.path)
-                    ? 'text-yellow-600'
-                    : 'text-gray-700 hover:text-yellow-600'
-                }`}
-              >
-                {item.name}
-                {isActive(item.path) && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full animate-pulse-glow" />
-                )}
-              </Link>
-            ))}
-            <Button 
-              asChild 
+          <div className="hidden md:flex items-center w-full">
+            {/* Centered nav items */}
+            <div className="flex-1 flex justify-center space-x-8">
+              {navItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className={`relative px-3 py-2 text-sm font-medium transition-all duration-300 hover-scale ${
+                    isActive(item.path)
+                      ? 'text-yellow-600'
+                      : 'text-gray-700 hover:text-yellow-600'
+                  }`}
+                >
+                  {item.name}
+                  {isActive(item.path) && (
+                    <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full animate-pulse-glow" />
+                  )}
+                </Link>
+              ))}
+            </div>
+
+            {/* Book Now button */}
+            <Button
+              asChild
               className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black px-6 py-2 rounded-full hover-scale hover-glow font-semibold transition-all duration-300"
             >
               <Link to="/book">Book Now</Link>
@@ -88,11 +92,13 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button 
-              asChild 
+            <Button
+              asChild
               className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black rounded-full mt-4 font-semibold hover-scale hover-glow transition-all duration-300"
             >
-              <Link to="/book" onClick={() => setIsOpen(false)}>Book Now</Link>
+              <Link to="/book" onClick={() => setIsOpen(false)}>
+                Book Now
+              </Link>
             </Button>
           </div>
         )}

@@ -2,7 +2,7 @@
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppFloat = () => {
-  const phoneNumber = "+2348123456789"; // Nigerian phone number
+  const phoneNumber = "+2348107694432"; // Nigerian phone number
   const message = "Hello Yemkiss! I'm interested in your beauty services. Can you help me?";
   
   const handleWhatsAppClick = () => {
