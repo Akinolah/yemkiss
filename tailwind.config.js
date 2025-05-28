@@ -61,7 +61,6 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Bright yellow and canary yellow color scheme
 				yellow: {
 					50: '#fffef7',
 					100: '#fefcbf',
