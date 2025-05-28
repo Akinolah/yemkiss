@@ -126,15 +126,15 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom backgrounds */
-.bg-yellow-custom {
-  background-color: #ffff00;
+/* Custom gradient backgrounds */
+.gradient-yellow {
+  background: linear-gradient(135deg, #ffff00 0%, #ffd700 100%);
 }
 
-.bg-yellow-light {
-  background-color: #fffef7;
+.gradient-yellow-light {
+  background: linear-gradient(135deg, #fffef7 0%, #fef9c7 100%);
 }
 
-.hover-bg {
-  @apply transition-all duration-300 hover:bg-yellow-400;
+.hover-gradient {
+  @apply transition-all duration-300 hover:bg-gradient-to-r hover:from-yellow-400 hover:to-yellow-500;
 }
