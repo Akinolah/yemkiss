@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+# 💄 Yemkiss Beauty Salon Website
 
-## Project info
+A modern, responsive website for a beauty salon offering **cosmetics, hair styling, and beauty consulting services**, built with **Vite, TypeScript, and Tailwind CSS**. The platform enables customers to explore services and connect instantly via WhatsApp.
 
-**URL**: https://lovable.dev/projects/04e2bbbe-2b86-494a-abe4-bd1a981e35db
+🔗 Live Site: https://yemkiss.vercel.app/
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🌟 Overview
 
-**Use Lovable**
+Yemkiss is a digital platform designed to represent a beauty brand online, showcase services, and drive customer engagement. The website focuses on simplicity, speed, and direct communication, making it easy for clients to discover offerings and book services.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/04e2bbbe-2b86-494a-abe4-bd1a981e35db) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## ✨ Features
 
-**Use your preferred IDE**
+- 💄 **Service Showcase** – Highlights beauty services like hair styling, cosmetics, and consulting  
+- 📱 **Responsive Design** – Optimized for mobile, tablet, and desktop  
+- ⚡ **Fast Performance** – Powered by Vite for quick load times  
+- 🎨 **Modern UI/UX** – Clean and elegant design using Tailwind CSS  
+- 💬 **WhatsApp Integration** – One-click chat for bookings and inquiries  
+- 🧠 **Type Safety** – Built with TypeScript for scalability and maintainability  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+- **Vite** – Frontend build tool  
+- **TypeScript** – Typed JavaScript  
+- **Tailwind CSS** – Utility-first CSS framework  
+- **Vercel** – Deployment and hosting  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 💬 WhatsApp Integration
 
-# Step 3: Install the necessary dependencies.
-npm i
+The website includes direct WhatsApp messaging to allow customers to:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/04e2bbbe-2b86-494a-abe4-bd1a981e35db) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Book appointments  
+- Ask questions  
+- Get beauty consultations  
